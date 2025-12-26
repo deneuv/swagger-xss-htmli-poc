@@ -1,0 +1,9 @@
+{
+    "url": "https://raw.githubusercontent.com/deneuv/swagger-xss-htmli-poc/main/poc-deneuv",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/deneuv/swagger-xss-htmli-poc/main/poc-deneuv",
+            "name": "Foo"
+        }
+    ]
+}
