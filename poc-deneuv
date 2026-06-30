@@ -2,7 +2,7 @@ swagger: "2.0"
 
 info:
   title: "Deneuv – XSS / HTML Injection PoC"
-  version: "1.0.0"
+  version: "2.0.0"
   description: >
     <h2>HTML Injection / XSS PoC</h2>
     <p>sSe isso aparece renderizado como HTML, a UI do Swagger aceita conteúdo não confiável.</p>
